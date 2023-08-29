@@ -1,5 +1,6 @@
 import React, { memo, ReactNode, useState } from "react";
 import { View, PixelRatio } from "react-native";
+import px2dp from "./px2dp";
 const dpTopx = (dp: any) => PixelRatio.getPixelSizeForLayoutSize(dp);
 
 const ScaleView = ({
@@ -57,3 +58,4 @@ const ScaleView = ({
 };
 
 export default memo(ScaleView);
+export { px2dp };
